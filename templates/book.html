@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<form action="http://localhost:5000/payment" method="post">
+
+First name:<br>
+<input type="text" name="firstname">
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+Age:<br>
+<input type="integer" name="age">
+<br>
+<input type="radio" name="sex" value="M" checked> Male
+<br>
+<input type="radio" name="sex" value="F"> Female
+<br>
+Email:<br>
+<input type="integer" name="email">
+<br>
+Phone:<br>
+<input type="integer" name="phone">
+<br>
+<input type="hidden" name="rid" value="{{entries[[0].date}}">
+<br>
+<input type="radio" name="meal" value="Y" checked> YES (5% of Price)
+<input type="radio" name="meal" value="N"> NO
+<br>
+No of Seats:<br>
+<input type="integer" name="seats">
+<input type="submit" value="BOOK NOW">
+</form>
+</body>
+</html>

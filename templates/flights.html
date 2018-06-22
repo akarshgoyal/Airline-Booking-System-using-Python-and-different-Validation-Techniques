@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	display: inline;
+}
+
+li {
+    display: inline;
+}
+#fly{
+    padding: 20px;
+    width: 300px;
+
+}
+</style>
+</head>
+<body>
+{% for entry in entries %}
+<ul id="menu">
+    <li><P>Flight NO:</p>{{ entry.Flight_no }}</li>
+	<li><P>Airlines:</p>{{ entry.Airlines }}</li>
+	<li><P>Departure time:</p>{{entry.depart_time}}</li>
+	<li><P>Arrival time:</p>{{entry.arrive_time}}</li>
+	<li><P>date:</p>{{entry.date}}</li>
+	<li><P>Price :</p>{{entry.price}}</li>
+	<li><P>No to stops:</p>{{entry.stops}}</li>
+	<div id="fly"><a href="http://localhost:5000/book?rid={{entry.rid}}&date={{entry.date}}">BOOK NOW</a></div>
+</ul>
+  {% else %}
+    <p><em>Unbelievable.  No entries here so far</p>
+  {% endfor %}
+</body>
+</html>

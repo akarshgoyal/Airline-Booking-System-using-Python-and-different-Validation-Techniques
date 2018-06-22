@@ -1,0 +1,21 @@
+body{
+    background:url('pics/flight-booking.jpg');
+    background-size: 1280px 780px;
+}
+.abc{
+    margin: 20px 0px 20px 50px;
+    font-size: 20px;
+}
+form{
+    width:300px;
+    height:350px;
+    padding: 10px;
+    margin-top: 200px;
+    margin-left:100px;
+    background-color: rgba(112,166,227,0.2);
+
+}
+#done{
+    margin-left: 100px;
+    padding:7px;
+}

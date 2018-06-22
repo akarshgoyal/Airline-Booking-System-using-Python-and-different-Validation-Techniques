@@ -1,0 +1,39 @@
+body {
+    font-family: "Merriweather Sans";
+    font-size: 25px;
+    background:url('pics/flight-booking.jpg');
+    background-size: 1280px 780px;
+   }
+form{
+    margin-left: 760px;
+    margin-top: 400px;
+    height: 130px;
+
+}
+#origin,#destination,#date{
+    height: 10px;
+    color: whitesmoke;
+}
+#origin input{
+    margin-left: 50px;
+}
+#destination input{
+    margin-left: 5px;
+}
+input{
+    font-size: 15px;
+}
+.form1{
+    background-color: rgba(255,255,255,0.2);
+    height: 150px;
+}
+#fly{
+    padding: 20px;
+    width: 150px;
+
+}
+#date1
+{
+    width: 180px;
+   margin-left:  62px;
+}
